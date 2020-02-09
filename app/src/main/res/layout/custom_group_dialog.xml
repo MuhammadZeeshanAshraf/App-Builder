@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_centerHorizontal="true"
+    android:layout_centerInParent="true"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="Payment Method"
+        app:titleTextColor="@color/black"
+        app:navigationIcon="@drawable/ic_exit"
+        android:layout_marginBottom="18dp">
+     </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/payme"/>
+
+    <TextView
+        android:id="@+id/relax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/iran_sans_mobile"
+        android:gravity="center"
+        android:text="Select the way your want to Pay."
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <RadioGroup
+        android:id="@+id/payType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/paypal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/calibri"
+            android:text="PayPal"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/gPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/calibri"
+            android:text="Google Pay"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/buttonshapewhitebg"
+            android:fontFamily="@font/gotham"
+            android:text="  Cancel  "
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/buttonshapewhitebg"
+            android:fontFamily="@font/gotham"
+            android:text="   Pay   "
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
